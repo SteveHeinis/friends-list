@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* Input */
+.appTitle {
+	text-align: center;
+	color: white;
+}
+
+.prenomForm {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.prenomForm button {
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px
+}
+
+/* List of cards */
+
+.card-container {
+	padding: 10px;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.card-element {
+	height: 180px;
+	background-color: #fff;
+	color: #3482C2;
+	border-radius: 10px;
+}
+
+.editButton, .deleteButton {
+	font-size: 15px !important;
+	margin: 2px;
+}
+
+#GuestCheckbox {
+	margin-right: 5px;
+}
+
+.cardName {
+	margin-top: 8px;
+	margin-bottom: 0px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+/* Input Edit */
+.inputEdit {
+	height: 25px !important;
+}
+
+/* Confirmed / Unconfirmed*/
+
+.Confirmed {
+	text-align: center;
+	color: white;
+}
+
+.Unconfirmed {
+	text-align: center;
+	color: white;
+}
+
