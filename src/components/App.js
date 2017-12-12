@@ -5,6 +5,7 @@ import UnconfirmedList from './UnconfirmedList';
 import InputEdit from './InputEdit';
 import Confirmed from './Confirmed';
 import Unconfirmed from './Unconfirmed';
+import base from '../base';
 
 class App extends Component {
 
@@ -13,6 +14,29 @@ class App extends Component {
     confirmed: 0,
     unconfirmed: 0,
     unconfirmedPeoples : []
+  } 
+
+    componentWillMount() {
+    this.refconfirmedPeoples = base.syncState('/confirmedPeoples', {
+      context: this,
+      state: 'confirmedPeoples',
+      asArray: true
+    })
+    this.refconfirmedCount = base.syncState('/confirmedCount', {
+      context: this,
+      state: 'confirmed',
+      defaultValue: 0
+    })
+    this.refunconfirmedPeoples = base.syncState('/unconfirmedPeoples', {
+      context: this,
+      state: 'unconfirmedPeoples',
+      asArray: true
+    })
+    this.refunconfirmedCount = base.syncState('/unconfirmedCount', {
+      context: this,
+      state: 'unconfirmed',
+      defaultValue: 0
+    })
   } 
 
   /////////// STATE ///////////
