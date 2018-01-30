@@ -46,7 +46,7 @@ class App extends Component {
     const unconfirmedPeoples = [...this.state.unconfirmedPeoples, prenomForUnconfirmedList]
     this.setState({
       confirmedPeoples,
-      confirmed: this.state.confirmed + 1,
+      unconfirmed: this.state.unconfirmed + 1,
       unconfirmedPeoples
     }) 
   }

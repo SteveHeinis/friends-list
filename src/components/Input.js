@@ -5,16 +5,16 @@ export default class Input extends React.Component {
 	getPrenom = (e) => {
 		e.preventDefault();
 		const prenomForConfirmedList = {Prenom : this.Prenom.value,
-						isConfirmed: true,
+						isConfirmed: false,
 						isEditing: false,
-						color: "green",
-						display: "block"
+						color: "red",
+						display: "none"
 						};
 		const prenomForUnconfirmedList = {Prenom : this.Prenom.value,
-						isConfirmed: true,
+						isConfirmed: false,
 						isEditing: false,
-						color: "green",
-						display: "none"
+						color: "red",
+						display: "block"
 						};
 		this.props.sendPrenom(prenomForConfirmedList, prenomForUnconfirmedList);
 		this.prenomForm.reset();		

@@ -36,7 +36,7 @@ body {
 }
 
 .card-element {
-	height: 180px;
+	padding: 10px;
 	background-color: #fff;
 	color: #3482C2;
 	border-radius: 10px;
